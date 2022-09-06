@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Next Gen Gaming Lounge</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="evo-calendar.min.css">
+        <link rel="stylesheet" href="evo-calendar.orange-coral.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-------------header------------>
+        <section class="header">
+            <div style="background: url(images/events-header.jpeg)" class="bg-cover">
+                <div class="overlay"></div>
+            <div class="container h-100">
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white">
+                        <nav>
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-links" id="navLinks">
+                                <i class="fa fa-times" onclick="hideMenu()"></i>
+                                <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="pricing.html">PRICING</a></li>
+                                    <li><a href="events.html">EVENTS</a></li>
+                                    <li><a href="aboutus.html">ABOUT US</a></li>
+                                    <li><a href="contact.html">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                            <i class="fa fa-bars" onclick="showMenu()"></i>
+                        </nav>
+                        <div class="subheader-title">
+                            <h1>EVENTS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------calendar------------>
+        <div class="google" align="center">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGF2aXNidXJyaWxsQGljbG91ZC5jb20&amp;color=%23039BE5&amp;showTitle=0" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="yes"></iframe>            <div class="price-questions">  
+            <h1>Interested in having a party with Next Gen Gaming Lounge?</h1>
+            <h3>Check out the details of our Party Package! Get in touch with us to set up your party today!</h3>
+            <div align="center">
+                <a class="hero-btn purple-btn" href="pricing.html">OUR PACKAGES</a>
+                <a class="hero-btn purple-btn" href="contact.html">GET IN TOUCH WITH US!</a>
+            </div>
+        </div> 
+        <!----events in list form------>
+
+        <!-----footer--------->
+
+        <section class="footer">
+            <div class="footer-line"></div>
+            <div class="nav-links-footer">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pricing.html">PRICING</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="info-footer">
+                <p>COLLEGE STATION, TX</p>
+                <p>EMAIL@NEXTGENGAMINGLOUNGE.COM</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+
+
+
+        <!-----Javascript for toggle menu--------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
